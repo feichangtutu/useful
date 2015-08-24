@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>验证码</title>
+</head>
+
+<body>
+<!--<div id="div1" style="font-size:68px;color: purple">-->
+    <!--1356-->
+<!--</div>-->
+<div id="div2">
+</div>
+
+<script>
+    //数字型
+    var str ="";
+    for (var i=0;i<4;i++){
+        var c=Math.random()*9;//0~9
+        c=Math.round(c);
+        str+=c;
+    }
+//    document.getElementById("div1").innerHTML=str;
+    var obj=[
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+    ];
+    //字母型
+    function suiji(n){
+
+        return obj[n];	//需要再研究下对象！！！
+    }
+    var str1 ="";
+    var stringArray = [];
+    for(var n= 0;n<2000;n++){
+        for (var i=0;i<10;i++){
+            var d=Math.random()*(obj.length - 1);
+            d=Math.round(d);
+            var e = suiji(d);
+            str1+=e;
+        }
+        if (stringArray.indexOf(str1) == -1) {
+            stringArray.push(str1);
+//        console.log(str1);
+            document.getElementById("div2").innerHTML += (str1 + "<br/>");
+        }
+
+        str1="";
+    }
+
+
+
+</script>
+</body>
+
+</html>
