@@ -10,3 +10,5 @@ http://fontello.com/
 http://www.iconfont.cn/repositories/10
 http://www.iconfont.cn/help/iconuse.html
 可以自己上传图标，要求svg格式
+####
+随机数生成器 random.html
