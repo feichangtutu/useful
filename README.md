@@ -1,4 +1,5 @@
 # useful
+###1.iconfont系列
 ####fontawesom 
 解决图标问题,引用类名即可
 http://fontawesome.io/icons/
@@ -10,5 +11,10 @@ http://fontello.com/
 http://www.iconfont.cn/repositories/10
 http://www.iconfont.cn/help/iconuse.html
 可以自己上传图标，要求svg格式
-####
-随机数生成器 random.html
+###2.随机数生成器 random.html
+
+###3.calendar
+纯DOM生成的calendar插件
+###3.ecma6
+一些新特性：let
+
