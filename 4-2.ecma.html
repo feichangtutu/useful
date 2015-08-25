@@ -9,11 +9,12 @@
 </body>
 </html>
 <script>
-    {
-        let a =10;
-        var b = 5;
+    var a = [];
+    for (let i = 0; i < 10; i++) {
+        a[i] = function () {
+            console.log(i);
+        };
     }
-    console.log(a);
-    console.log(b);
+    a[6](); // 6
 
 </script>
