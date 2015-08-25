@@ -1,0 +1,184 @@
+body{
+    background-color: #ffffff;
+    font-family: "Microsoft YaHei","Lucida Grande","Hiragino Sans GB W3","Segoe UI",
+    "Hiragino Sans GB",  "FontAwesome", sans-serif;
+}
+@media screen and (min-width: 641px) {
+    body{
+        position: relative;
+        width:640px;
+        margin:0 auto;
+    }
+}
+
+
+
+#signTop{
+    background: url("../images/sign_bg.png") no-repeat;
+    background-size: 100% auto;
+    height: 150px;
+}
+#signTop{
+    position: relative;
+}
+.left,.middle,.right{
+    position: relative;
+    top: 0;
+    width:33.33%;
+    float: left;
+}
+.clickSign{
+    color: #fd306b;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+#signButton{
+    background: url("../images/bg1.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 0px 10px 7px;
+
+}
+/*第二次点击签到后出现该提示*/
+#signed{
+    background: url("../images/bg2.png")  no-repeat;
+    background-size: 100% 100%;
+    padding: 7px 10px 0px;
+}
+.icons{
+    margin: 30px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    box-shadow: 0 0 1em #e10051;
+    background-size: contain;
+    z-index: 100;
+}
+.right img{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 30%;
+}
+.right{
+    color: white;
+    font-size: 14px;
+    text-shadow: #b70444;
+    /*opacity: 0.7;*/
+}
+#total{
+    font-size: 18px;
+    text-shadow: #ba0143;
+    /*opacity: 0.93;*/
+}
+/*calendar*/
+#calendar{
+    clear: both;
+    width:100%;
+    padding:10px 0;
+    -webkit-user-select:none
+}
+#calendar #can_title{
+    width: 100%;
+    text-align: center;
+    height: 110px;
+    background: url("../images/title_bg.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+#calendar #can_title span{
+    -webkit-user-select:none;
+    cursor:pointer;
+    text-align: center;
+}
+ul{
+    width: 100%;
+    height: 110px;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+#mid_title{
+    display: inline-block;
+    line-height: 30px;
+    color: #fd306b;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    border-radius: 45px;
+    border: 2px solid #fd306b;
+    box-shadow:  0 0 1em #9d6662;
+    margin: 0 auto;
+    margin-top: 23px;
+}
+.other_title{
+    display: inline-block;
+    height: 110px;
+    line-height: 110px;
+    overflow: hidden;
+}
+.week{
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    height: 30px;
+    border-bottom:2px solid #f8e8e6 ;
+}
+.week span{
+    width: 13%;
+    height: 30px;
+    line-height: 30px;
+    /*margin: 10px 0;*/
+    text-align: center;
+    float: left;
+    color:#282828;
+}
+#calendar_content{
+    width: 100%;
+    padding: 0 10px;
+}
+#calendar_content span{
+    font-size: 16px;
+    font: 'Arial';
+    width:13%;
+    height:20px;
+    margin: 10px 0;
+    cursor:pointer;
+    -webkit-user-select:none;
+    float:left;
+    text-align: center;
+}
+/*签到的日期标记*/
+.signedDate{
+    background: #f18f8f;
+}
+.notThisM{
+    color: #828181;
+}
+.changeTitle{
+    clear: both;
+    padding-right: 30px;
+    padding-left: 10px;
+    background: url("../images/congratulation.png") no-repeat center;
+    background-size: contain;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 10px 5px 3px;
+}
+.newTitle{
+    color: #ffffff;
+    text-shadow:#e10051;
+    font-size: 18px;
+}
+.currentM {
+    /*background-color: red;*/
+    color: #000;
+}
+.currentD {
+    background-color: blue;
+}
