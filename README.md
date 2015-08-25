@@ -15,7 +15,8 @@ http://www.iconfont.cn/help/iconuse.html
 
 ###3.calendar
 纯DOM生成的calendar插件
-###3.ecma6
+###4.ECMAScript 6
+http://es6.ruanyifeng.com/#docs/let
 一些新特性：
 #####let
 ES6新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。
