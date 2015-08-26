@@ -19,3 +19,4 @@ http://www.iconfont.cn/help/iconuse.html
 http://es6.ruanyifeng.com/#docs/let
 一些新特性：
 #####(1)let&constant.md
+#####(2)变量的解构赋值.md
