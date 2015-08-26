@@ -5,13 +5,13 @@
 
 #####let不像var那样，会发生“变量提升”现象。
 
-function do_something() {
+``function do_something() {
   console.log(foo); // ReferenceError
   let foo = 2;
-}
+}``
 #####在代码块内，使用let命令声明变量之前，该变量都是不可用的。这在语法上，称为“暂时性死区”（temporal dead zone，简称TDZ）。
 
-if (true) {
+``if (true) {
   // TDZ开始
   tmp = 'abc'; // ReferenceError
   console.log(tmp); // ReferenceError
@@ -21,7 +21,7 @@ if (true) {
 
   tmp = 123;
   console.log(tmp); // 123
-}
+}``
 
 
 #####let不允许在相同作用域内，重复声明同一个变量。
@@ -30,44 +30,40 @@ if (true) {
 #####块级作用域的出现，实际上使得获得广泛应用的立即执行匿名函数（IIFE）不再必要了。
 
 // IIFE写法
-(function () {
+``(function () {
   var tmp = ...;
   ...
-}());
+}());``
 
 // 块级作用域写法
-{
+``{
   let tmp = ...;
   ...
-}
-
+}``
 
 #####const也用来声明变量，但是声明的是常量。一旦声明，常量的值就不能改变。
 
-const PI = 3.1415;
+``const PI = 3.1415;
 PI // 3.1415
-
 PI = 3;
-PI // 3.1415
-
+PI // 3.1415``
 const PI = 3.1;
 PI // 3.1415  对常量重新赋值不会报错，只会默默地失败。
-const的作用域与let命令相同：只在声明所在的块级作用域内有效。
+const的作用域与let命令相同：只在声明所在的块级作用域内有效。``
 
-if (true) {
+``if (true) {
   const MAX = 5;
-}
+}``
 
 // 常量MAX在此处不可得
 
 ######const命令也不存在提升，只能在声明的位置后面使用。
 
 
-const foo = {};
+``const foo = {};
 foo.prop = 123;
-
 foo.prop
-// 123
+// 123``
 
 foo = {} // 不起作用
 ######上面代码中，常量foo储存的是一个地址，这个地址指向一个对象。
@@ -83,13 +79,13 @@ foo.prop = 123; // 不起作用
 ES6规定，var命令和function命令声明的全局变量，属于全局对象的属性；
 let命令、const命令、class命令声明的全局变量，不属于全局对象的属性。
 
-var a = 1;
+`var a = 1;`
 // 如果在node环境，可以写成global.a
 // 或者采用通用方法，写成this.a
-window.a // 1
+`window.a // 1`
 
-let b = 1;
-window.b // undefined
+``let b = 1;
+window.b // undefined``
 
 
 
