@@ -61,3 +61,46 @@ if (true) {
 // 常量MAX在此处不可得
 
 const命令也不存在提升，只能在声明的位置后面使用。
+
+
+const foo = {};
+foo.prop = 123;
+
+foo.prop
+// 123
+
+foo = {} // 不起作用
+上面代码中，常量foo储存的是一个地址，这个地址指向一个对象。不可变的只是这个地址，即不能把foo指向另一个地址，但对象本身是可变的，所以依然可以为其添加新属性。
+
+如果真的想将对象冻结，应该使用Object.freeze方法。
+
+const foo = Object.freeze({});
+foo.prop = 123; // 不起作用
+上面代码中，常量foo指向一个冻结的对象，所以添加新属性不起作用。
+
+在javascript中，所有全局变量都是全局对象都属性。
+ES6规定，var命令和function命令声明的全局变量，属于全局对象的属性；
+let命令、const命令、class命令声明的全局变量，不属于全局对象的属性。
+
+var a = 1;
+// 如果在node环境，可以写成global.a
+// 或者采用通用方法，写成this.a
+window.a // 1
+
+let b = 1;
+window.b // undefined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
