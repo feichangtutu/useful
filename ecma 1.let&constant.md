@@ -85,10 +85,6 @@ let命令、const命令、class命令声明的全局变量，不属于全局对�
 
 ``let b = 1;
 window.b // undefined``
-###类似数组的对象都有一个length属性，因此还可以对这个属性解构赋值。
-    
-    ``let {length : len} = 'hello';</br>
-    len //5``
 
 
 
