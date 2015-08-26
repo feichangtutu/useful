@@ -54,11 +54,11 @@ sixth // 5``
 ####和数组一样，解构也可以用于嵌套结构的对象。
 
 ``var obj = {
-     p: [
-        "Hello",
-        { y: "World" }
-    ]
-    };``
+     p: [   <br />
+        "Hello",<br />
+        { y: "World" }<br />
+    ]<br />
+    };<br />``
 
 ``var { p: [x, { y }] } = obj;
 x // "Hello"
