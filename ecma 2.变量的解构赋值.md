@@ -40,7 +40,7 @@ a // "a"``
 
 ####只要某种数据结构具有Iterator接口，都可以采用数组形式的解构赋值.
 ``function* fibs() {
-  var a = 0;
+var a = 0;
   var b = 1;
   while (true) {
     yield a;
