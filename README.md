@@ -20,3 +20,11 @@ http://es6.ruanyifeng.com/#docs/let
 一些新特性：
 #####(1)let&constant.md
 #####(2)变量的解构赋值.md
+
+### study.pagemaster
+关于翻页的，这个不是很清楚。需要更完善的替换。
+
+###5.insertAfter
+insertBefore(newchild,refchild)
+
+###6.prependChild

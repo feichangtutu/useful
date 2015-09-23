@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var s = "Hello world!";
+
+    console.log(s.startsWith("world", 6)) // true
+    console.log(s.endsWith("Hello", 5) )// true 前5个字符是hello
+    console.log(s.includes("Hello", 6) )//false
+//    使用第二个参数n时，endsWith的行为与其他两个方法有所不同。它针对前n个字符，而其他两个方法针对从第n个位置直到字符串结束。
+
+    s.startsWith("Hello") // true
+    s.endsWith("!") // true
+    s.includes("o") // true
+
+//    includes()：返回布尔值，表示是否找到了参数字符串。
+//    startsWith()：返回布尔值，表示参数字符串是否在源字符串的头部。
+//    endsWith()：返回布尔值，表示参数字符串是否在源字符串的尾部。
+
+
+    'abc'.charAt(0) // "a"
+    '𠮷'.charAt(0) // "\uD842"
+
+    "hello".repeat(2) // "hellohello"
+
+    '\z' === 'z'  // true
+    '\172' === 'z' // true
+    '\x7A' === 'z' // true
+    '\u007A' === 'z' // true
+    '\u{7A}' === 'z' // true
+//字符的Unicode表示法
+//    JavaScript允许采用\uxxxx形式表示一个字符，其中“xxxx”表示字符的码点。
+
+//    但是，这种表示法只限于\u0000——\uFFFF之间的字符。超出这个范围的字符，必须用两个双字节的形式表达。
+    "\uD842\uDFB7"
+    // "𠮷"
+
+//    ES6对这一点做出了改进，只要将码点放入大括号，就能正确解读该字符。
+
+    "\u{20BB7}"
+    // "𠮷"
+
+    "\u{41}\u{42}\u{43}"
+    // "ABC"
+
+    let hello = 123;
+    hell\u{6F} // 123
+
+    '\u{1F680}' === '\uD83D\uDE80'
+    // true
+
+//    ES6提供了String.fromCodePoint方法，可以识别0xFFFF的字符，弥补了String.fromCharCode方法的不足。在作用上，正好与codePointAt方法相反。
+
+    String.fromCodePoint(0x20BB7)
+    // "𠮷"
+
+
+    var s = "𠮷";
+
+    s.length // 2
+    s.charAt(0) // ''
+    s.charAt(1) // ''
+    s.charCodeAt(0) // 55362
+    s.charCodeAt(1) // 57271
+
+    'abc'.at(0) // "a"
+    '𠮷'.at(0) // "𠮷"
+
+//    ES6提供String.prototype.normalize()方法，用来将字符的不同表示方法统一为同样的形式，这称为Unicode正规化。
+
+    '\u01D1'.normalize() === '\u004F\u030C'.normalize()//true
+//    repeat()返回一个新字符串，表示将原字符串重复n次。
+    "hello".repeat(2) // "hellohello"
+
+//    模板字符串（template string）是增强版的字符串，用反引号（`）标识。它可以当作普通字符串使用，也可以用来定义多行字符串，或者在字符串中嵌入变量。
+    var name = "Bob", time = "today";
+//    模板字符串中嵌入变量，需要将变量名写在${}之中。
+    console.log(`Hello ${name}, how are you ${time}?`);//"Hello Bob, how are you today?"
+//    模板字符串之中还能调用函数。
+
+    function fn() {
+        return "Hello World";
+    }
+
+    console.log(`foo ${fn()} bar`);
+    // foo Hello World bar
+</script>
