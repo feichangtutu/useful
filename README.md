@@ -12,7 +12,8 @@ http://www.iconfont.cn/repositories/10
 http://www.iconfont.cn/help/iconuse.html
 可以自己上传图标，要求svg格式
 ###2.随机数生成器 random.html
-
+randomCode：生成验证码
+2-2 生成随机数 between min and max
 ###3.calendar
 纯DOM生成的calendar插件
 ###4.ECMAScript 6
@@ -28,3 +29,5 @@ http://es6.ruanyifeng.com/#docs/let
 insertBefore(newchild,refchild)
 
 ###6.prependChild
+细节1:nodeName 获取方法  
+nodeName 获取到到节点名称为大写字符串。所以判断节点名称时需要 toUpperCase()

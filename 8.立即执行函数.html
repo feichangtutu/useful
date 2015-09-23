@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul>
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+</ul>
+</body>
+<script>
+    <!-- 点击每个li弹出相应的索引-->
+    var oLi = document.getElementsByTagName('li');
+    for (var i=0;i<oLi.length;i++){
+        ;(function(i){
+            oLi[i].onclick=function(){
+                alert(i);
+            }
+        })(i);
+    }
+</script>
+</html>
