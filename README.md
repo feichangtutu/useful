@@ -31,3 +31,6 @@ insertBefore(newchild,refchild)
 ###6.prependChild
 细节1:nodeName 获取方法  
 nodeName 获取到到节点名称为大写字符串。所以判断节点名称时需要 toUpperCase()
+###9.对象集合和数组
+对象集合不是数组。
+对象集合具有时效性，且不能使用push、pop、shift等数组等原生方法，如果使用则需要转化为普通等数组。

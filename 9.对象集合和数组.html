@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+</body>
+<script>
+//  普通 数组
+    var a = ['a','b','c','d'];
+//   对象集合
+    var oDom = document.getElementsByTagName('*');
+//    对象集合转化为普通数组
+    var aDom = Array.prototype.slice.call(oDom,0);
+    console.log(aDom instanceof Array);//true
+</script>
+</html>
