@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" href="css/popup.css"/>
+</head>
+<body>
+<a href="#" class="popup">Link</a>
+<!--<a href="http://placehold.it/350x175.png" class="popup">Popup link</a>-->
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery.popup.js"></script>
+<script>
+//    var options = {};
+//    $('a.popup').popup(options);
+popup.open('image.png');
+popup.open('<h1>New Content</h1>', 'html', $('a.popup'));
+</script>
+</html>
