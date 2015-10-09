@@ -1,0 +1,81 @@
+.gheader-new {
+    width: 100%;
+    height: 42px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 990;
+    background: #4C4C4C;
+    border-bottom: 1px solid #E5E5E5;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.gheader-new .gh-wrap {
+    position: relative;
+    height: 38px;
+    font-size: 12px;
+    border-top: 1px solid #555;
+    border-bottom: 3px solid #85C155;
+    line-height: 1.5;
+    padding: 0 15px;
+}
+.gfl {
+    float: left;
+}
+
+ol, ul {
+    list-style: none;
+}
+.gheader-new .gh-nav {
+    float: left;
+    margin-right: 10px;
+}
+.gheader-new .gh-nav li {
+    float: left;
+    _display: inline;
+    _height: 18px;
+    margin-right: 5px;
+    position: relative;
+}
+.gheader-new a {
+    display: block;
+    _display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 10px;
+    color: #D0D0D0;
+    outline: medium none;
+}
+.gheader-wrap a {
+    text-decoration: none;
+}
+.gh-search {
+    float: left;
+    margin-top: 4px;
+    border: 1px solid #444;
+}
+.gh-search p {
+    height: 25px;
+    border: 0;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    padding: 1px 0 0 1px;
+    background: #FFF;
+}
+.gh-search p, .gh-search input {
+    float: left;
+    font-size: 12px;
+}
+.gh-search .gh-search-txt {
+    width: 206px;
+    padding: 3px 6px 4px 5px;
+    border: 0;
+    outline: 0;
+    height: 17px;
+}
+.gnicon-search {
+    background-position: 9px -52px;
+    width: 31px;
+    height: 23px;
+    border: 0;
+    cursor: pointer;
+}
