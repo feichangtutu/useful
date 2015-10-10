@@ -41,8 +41,10 @@ getChildren(ele,tag)
 #####5.6 一些css实现
 菱形菜单／三角形／清除浮动的方法
 #####5.7 一些css兼容问题
-######IE6双边距bug
-######透明度
+###### IE6双边距bug
+###### 透明度
+IE用filter:Alpha(Opacity=60)
+opacity:0.6;
 ######IE  a(有href属性)标签嵌套下的img标签，在IE下会带有边框。
 ######DIV浮动IE文本产生3象素的bug 左边对象浮动
 ######定义1px左右高度的容器
