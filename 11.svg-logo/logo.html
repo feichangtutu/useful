@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<title>8mbang-logo</title>
+<link rel="stylesheet" type="text/css" href="logo.css"/>
+</head>
+<body>
+<!--draw a circle-->
+<svg class="logo" width="800" height="200">
+    <circle  cx="12" cy="12" r="10" stroke="rgba(255,0,0,.5)"
+             stroke-width="2" fill="white"/>
+    <circle  cx="12" cy="32" r="10" stroke="rgba(255,0,0,.5)"
+             stroke-width="2" fill="white"/>
+    <path d="M 27 18 L 27 43 M 27 18 L 40 18 M 40 18 L 40 43 M 40 18 L 53 18 M 53 18 L 53 43"/>
+    <path d="M 58 0 L 58 43 M 58 20 Q 80 30 58 43"/>
+    <path d="M 86 20 Q 63 30 86 40 M 86 20 Q 83 50 93 38"/>
+    <path d="M 98 20 L 98 20 98 42 M 98 20 L98 20 108 20 M 108 20 Q 105 50 115 38"/>
+    <path d="M 125 22 Q 108 30 125 40 M 125 22 Q 125 75 108 65"/>
+</svg>
+
+<script src="http://cdn.gbtags.com/jquery/1.11.1/jquery.js"></script>
+</body>
+<script>
+    //获取SVG图形中素描线长度，使用上节介绍的方法
+    var len = $('path')[0].getTotalLength(); // 得到素描线长度
+    //注意，对于CSS3的keyframe来实现动画效果不需要js辅助，但我们需要知道这个素描线“长度”，使用js可以帮助我们获取
+    $('#len').html(len);
+</script>
+</html>
