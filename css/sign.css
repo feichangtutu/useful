@@ -14,7 +14,7 @@ body{
 
 
 #signTop{
-    background: url("../images/sign_bg.png") no-repeat;
+    background: url("../shanshan/images/sign_bg.png") no-repeat;
     background-size: 100% auto;
     height: 150px;
 }
@@ -35,14 +35,14 @@ body{
     margin-top: 15px;
 }
 #signButton{
-    background: url("../images/bg1.png") no-repeat;
+    background: url("../shanshan/images/bg1.png") no-repeat;
     background-size: 100% 100%;
     padding: 0px 10px 7px;
 
 }
-/*µÚ¶þ´Îµã»÷Ç©µ½ºó³öÏÖ¸ÃÌáÊ¾*/
+/*ï¿½Ú¶ï¿½ï¿½Îµï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ê¾*/
 #signed{
-    background: url("../images/bg2.png")  no-repeat;
+    background: url("../shanshan/images/bg2.png")  no-repeat;
     background-size: 100% 100%;
     padding: 7px 10px 0px;
 }
@@ -83,7 +83,7 @@ body{
     width: 100%;
     text-align: center;
     height: 110px;
-    background: url("../images/title_bg.png") no-repeat center;
+    background: url("../shanshan/images/title_bg.png") no-repeat center;
     background-size: 100% 100%;
 }
 
@@ -153,7 +153,7 @@ ul li{
     float:left;
     text-align: center;
 }
-/*Ç©µ½µÄÈÕÆÚ±ê¼Ç*/
+/*Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½*/
 .signedDate{
     background: #f18f8f;
 }
@@ -164,7 +164,7 @@ ul li{
     clear: both;
     padding-right: 30px;
     padding-left: 10px;
-    background: url("../images/congratulation.png") no-repeat center;
+    background: url("../shanshan/images/congratulation.png") no-repeat center;
     background-size: contain;
     text-align: center;
     font-size: 16px;

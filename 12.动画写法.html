@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/animate.css"/>
+</head>
+<body>
+1.keyframes 定义动画帧
+for example:
+@keyframes slideInRight {
+}
+
+@-moz-keyframes slideInRight{
+}
+
+@-o-keyframes slideInRight{
+}
+
+@-webkit-keyframes slideInRight {
+from {
+-webkit-transform: translate3d(100%, 0, 0);
+transform: translate3d(100%, 0, 0);
+visibility: visible;
+}
+
+to {
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+}
+
+2.定义动画名称
+.slideInRight {
+-webkit-animation-name: slideInRight;
+animation-name: slideInRight;
+}
+</body>
+</html>
