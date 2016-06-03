@@ -17,9 +17,10 @@ Special thanks to [Lanlazy](https://github.com/lazyhero).
         <div  class="photo-browser-container" >
             <div class="photo-browser-closer" v-on:click="close()">关闭</div>
             <div class="photo-browser-img-container">
-                <div v-touch:swipeleft="onSwipeLeft" v-touch:swiperight="onSwipeRight" v-bind:style="transitionObj" style="text-align: center;">
-                    <img v-bind:style="{width:photo.w + 'px',height:photo.h+'px',marginTop:photo.mTop +'px'}" v-show="curIndex==$index" class="photo-browser-img" v-for="photo in photos"
-                         :src="photo.src">
+                <div v-touch:swipeleft="onSwipeLeft" v-touch:swiperight="onSwipeRight"
+                 v-bind:style="transitionObj" style="text-align: center;">
+                    <img v-bind:style="{width:photo.w + 'px',height:photo.h+'px',marginTop:photo.mTop +'px'}" 
+                    v-show="curIndex==$index" class="photo-browser-img" v-for="photo in photos" :src="photo.src">
                 </div>
             </div>
         </div>
