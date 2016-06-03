@@ -12,10 +12,10 @@ Also thanks to [Vue.js](http://cn.vuejs.org/guide/).
 ####功能简介
 1. 点击列表图，唤醒组件-photoBrowser；
    列表图如下图： 
-![picList](./list.jpg  =300x)
+![picList](./list.jpg =300x)
 2. 打开组件，进行图片展示功能；
    展示效果图如下：
-   ![photoBrowser](./show.jpg  =300x)
+   ![photoBrowser](./show.jpg =300x)
    
     详细功能包括：
     2.1 滑动图片，可以进行图片切换
