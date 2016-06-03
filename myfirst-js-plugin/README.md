@@ -12,7 +12,7 @@ Also thanks to [Vue.js](http://cn.vuejs.org/guide/).
 ####功能简介
 1. 点击列表图，唤醒组件-photoBrowser；
    列表图如下图： 
-![picList](./list.jpg =100*100)
+![picList](./list.jpg=100x100)
 2. 打开组件，进行图片展示功能；
    展示效果图如下：
    ![photoBrowser](./show.jpg =300*150)
