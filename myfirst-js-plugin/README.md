@@ -12,14 +12,14 @@ Also thanks to [Vue.js](http://cn.vuejs.org/guide/).
 ####功能简介
 1. 点击列表图，唤醒组件-photoBrowser；
    列表图如下图： 
-![picList](./list.jpg =300x)
+![picList｛300*300｝](./list.jpg)
 2. 打开组件，进行图片展示功能；
    展示效果图如下：
    ![photoBrowser](./show.jpg =300x)
    
     详细功能包括：
     2.1 滑动图片，可以进行图片切换
-    2.2 图片可以循环展示
+    2.2 图片可以循环展示｀
     2.3 点击操作（目前是点击 **关闭** 按钮），photoBrowser关闭
 
 ####过程
