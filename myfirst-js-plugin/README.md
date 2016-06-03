@@ -10,7 +10,7 @@ Also thanks to [Vue.js](http://cn.vuejs.org/guide/).
 好久不写就是会忘，lan同学在帮我写这个插件的过程中，因为我的好些低级错误差点气死好几回，不过最后，他没死，我也活了，哈哈哈……多谢他的耐心指导，我终于有个拿的出手的小东西了。
 
 ####功能简介
-[picList](./list.jpg)
+![picList](./list.jpg)
 
 ####过程
 1. 搭个架子，写了个template ｀｀ 
